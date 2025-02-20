@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../assets/image.png"; // Ensure correct path to the image
+import profileImage from "../assets/image1.gif"; // Ensure correct path to the image
 import "./ProfessionalJourney.css"; // Import the CSS file
 
 const ProfessionalJourney = () => {
@@ -12,22 +12,17 @@ const ProfessionalJourney = () => {
 
         <ul className="journey-list">
           <li>
-            Motivated Computer Science Engineering student with expertise in
-            Python, C, C++, and Java, alongside skills in web and app
-            development, cybersecurity, and data science.
+          Dedicated Computer Science Engineering student with expertise in Python, C, C++, and Java, specializing in web development, cybersecurity, computer architecture, and high-performance computing.
           </li>
           <li>
-            Experienced in building innovative projects like email automation
-            tools and keylogger applications, with internships at Google for
-            Developers and Uma Robotics.
+          Experienced in developing projects like Book Management Application, E-Commerce Store, and an Image Gallery Application, with internships at EduSkills and IBM Skillsbuild.
           </li>
           <li>
-            Proficient in tools like Git, Figma, and Android Studio, and
-            certified in Data Analytics, Cybersecurity, and Network Security.
+            Proficient in tools like Git, Figma, and Canva and
+            certified in Cybersecurity, Generative AI, AWS Cloud.
           </li>
           <li>
-            Adept at problem-solving, team collaboration, and delivering
-            impactful results in technical roles.
+          Skilled in problem-solving, teamwork, and creating efficient, user-centric technical solutions.
           </li>
         </ul>
 
