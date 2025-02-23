@@ -16,9 +16,8 @@ const Education = () => {
           <h1>Bachelor of Technology</h1>
           <h2>Computer Science and Engineering</h2>
           <p>2021-2025</p>
-          <p><strong>INSTITUTION:</strong> <a href="https://huroorkee.ac.in/">Roorkee College Of Engineering, Roorkee</a></p>
-          <p><strong>UNIVERSITY:</strong> <a href="https://uktech.ac.in/en">Uttarakhand Technical University, Dehradun</a></p>
-          <p><strong>DURATION:</strong> 2021-2025</p>
+          <p><strong>INSTITUTION:</strong> <a href="https://huroorkee.ac.in/" target="_blank">Roorkee College Of Engineering, Roorkee</a></p>
+          <p><strong>UNIVERSITY:</strong> <a href="https://uktech.ac.in/en" target="_blank">Uttarakhand Technical University, Dehradun</a></p>
           <p><strong>CGPA:</strong> 7.9</p>
         </div>
         <div className="education-logo">
