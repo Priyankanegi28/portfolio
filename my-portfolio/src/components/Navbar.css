@@ -1,6 +1,6 @@
 .navbar {
     background: #0A1A41;
-    padding: 20px 0; /* Increased navbar height */
+    padding: 20px 0;
     color: white;
     position: fixed;
     width: 100%;
@@ -12,24 +12,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px; /* Add padding to shift elements */
+    padding: 0 100px;
   }
   
-  .logo {
+  .logo .logo-title{
     font-size: 22px;
     font-weight: 500;
-    margin-right: 100px; /* Moves the name further to the right */
+    margin-right: 100px;
+  }
+  .logo .logo-subtitle{
+    font-size: 300;
+    font-size: 1rem;
   }
   
   .logo span {
     color: #3498db;
   }
   
-  /* Navbar Links */
   .nav-links {
     list-style: none;
     display: flex;
-    margin-left: -50px; /* Moves buttons more to the left */
+    margin-left: -50px;
 
   }
   
@@ -48,7 +51,6 @@
     display: inline-block;
   }
   
-  /* White Underline on Hover */
   .nav-links a::after {
     content: "";
     display: block;
@@ -66,14 +68,12 @@
     width: 100%;
   }
   
-  /* Hamburger Menu */
   .menu-icon {
     font-size: 24px;
     display: none;
     cursor: pointer;
   }
   
-  /* Responsive Navbar */
   @media (max-width: 768px) {
     .menu-icon {
       display: block;
@@ -100,7 +100,6 @@
       margin: 10px 0;
     }
   
-    /* Ensure underline is positioned correctly in mobile view */
     .nav-links a::after {
       bottom: 0;
     }

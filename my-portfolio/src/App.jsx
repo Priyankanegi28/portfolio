@@ -4,14 +4,16 @@ import "./App.css";
 import Badges from "./components/Badges";
 import Contact from "./components/Contact";
 import Experience from './components/Experience';
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ProfessionalJourney from "./components/ProfessionalJourney";
+import Projects from "./components/Projects";
 
 const App = () => {
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
-  const workRef = useRef(null);  // Create a ref for Experience
+  const workRef = useRef(null);
   const contactRef = useRef(null);
 
   const scrollToHero = () => {
@@ -50,12 +52,14 @@ const App = () => {
       <div ref={workRef}>
         <Experience />
       </div>
+      <Projects/>
 
       <Badges />
 
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer/>
     </>
   );
 };

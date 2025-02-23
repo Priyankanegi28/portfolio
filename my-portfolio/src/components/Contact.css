@@ -1,25 +1,48 @@
-/* Contact Page Styles */
 .contact-section {
     background: url('../assets/contact.webp') no-repeat center center/cover;
     padding: 60px 10%;
     color: white;
-    min-height: 100vh; /* Ensures full screen height */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Flexbox Layout */
-/* Flexbox Layout */
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.contact-container,
+.contact-form-container,
+.contact-info-container,
+.contact-title,
+.subtitle,
+.underline,
+.contact-form,
+.google-map,
+.contact-info,
+.social-icons {
+    position: relative;
+    z-index: 2;
+}
+
 .contact-container {
     display: flex;
     justify-content: space-between;
-    gap: 200px;  /* Increased gap between form and map */
+    gap: 200px;
     flex-wrap: wrap;
 }
 
-
-/* Contact Form Section */
 .contact-form-container {
     flex: 1;
     max-width: 500px;
@@ -57,7 +80,6 @@
     resize: none;
 }
 
-/* Submit Button */
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -75,7 +97,6 @@
     background: #26a4cc;
 }
 
-/* Contact Info Section */
 .contact-info-container {
     flex: 1;
     max-width: 500px;
@@ -104,14 +125,11 @@
     text-decoration: underline;
 }
 
-/* Social Icons */
-/* Social Icons */
 .social-icons {
     display: flex;
-    gap: 40px;  /* Adds spacing between icons */
+    gap: 40px;
     margin-top: 10px;
 }
-
 
 .social-icons a {
     color: white;
@@ -122,6 +140,7 @@
 .social-icons a:hover {
     color: #f89b29;
 }
+
 .subtitle {
     font-size: 1.2rem;
     font-style: italic;
@@ -135,26 +154,27 @@
     margin-bottom: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .contact-form-container, .contact-info-container {
         max-width: 100%;
     }
 }
+
 @media (max-width: 1024px) {
     .contact-container {
         flex-direction: column;
         align-items: center;
-        gap: 30px;  /* Reduced gap for smaller screens */
+        gap: 30px;
     }
 }
+
 .contact-info p {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjust the gap between icon and text */
+    gap: 10px;
 }
 
 .contact-info p i {
-    font-size: 1.2rem; /* Adjust icon size */
-    color: white; /* Icon color */
+    font-size: 1.2rem;
+    color: white;
 }

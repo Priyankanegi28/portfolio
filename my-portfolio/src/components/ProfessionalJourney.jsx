@@ -1,6 +1,6 @@
 import React from "react";
-import profileImage from "../assets/image1.gif"; // Ensure correct path to the image
-import "./ProfessionalJourney.css"; // Import the CSS file
+import profileImage from "../assets/image1.gif";
+import "./ProfessionalJourney.css";
 
 const ProfessionalJourney = () => {
   return (

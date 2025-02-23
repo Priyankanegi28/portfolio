@@ -4,6 +4,16 @@ import "./Experience.css";
 
 const experiences = [
   {
+    id: 4,
+    title: "Masai School",
+    duration: "October, 2024 - Ongoing",
+    description: "Ongoing 6-month internship at Masai School in full-stack web development.",
+    details: "This Masai School internship is a hands-on learning experience where I am working on building real-world projects using HTML, CSS, JavaScript, React, Glitch, and Firebase. The program emphasizes problem-solving, collaboration, and industry-relevant skills. I am gaining expertise in front-end development, responsive design, state management in React, and backend integration with Firebase.",
+    skills: "HTML, CSS, JavaScript, React, Glitch, Firebase, Responsive Design, Version Control (Git)",
+    grade: "Performance evaluation is ongoing, with consistent progress and positive feedback on project submissions.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNckH5q7N4sJXIllDAKUsBdO8jwmxaNMVrrw&s",
+  },
+  {
     id: 1,
     title: "EduSkills",
     duration: "July, 2024 - Sep, 2024",
@@ -47,9 +57,9 @@ const Experience = () => {
 
   useEffect(() => {
     if (selectedExperience) {
-      document.body.style.overflow = "hidden"; // Disable scrolling when modal is open
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // Enable scrolling when modal is closed
+      document.body.style.overflow = "auto";
     }
   }, [selectedExperience]);
 
