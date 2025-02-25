@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ProfessionalJourney from "./components/ProfessionalJourney";
 import Projects from "./components/Projects";
+import Technology from "./components/Technology";
 
 const App = () => {
   const heroRef = useRef(null);
@@ -59,6 +60,7 @@ const App = () => {
       <div ref={educationRef}>
         <Education/>
       </div>
+      <Technology/>
 
       <div ref={workRef}>
         <Experience />

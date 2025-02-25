@@ -19,7 +19,7 @@ const Hero = ({ scrollToContact }) => {
             Download CV
           </a>
           <button className="btn" onClick={scrollToContact}>
-            Let's talk <FaPaperPlane className="icon" />
+            Let's talk <FaPaperPlane className="iconn" />
           </button>
         </div>
       </div>

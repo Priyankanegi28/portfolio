@@ -54,7 +54,7 @@ const Projects = () => {
         <div key={project.id} className="project">
           <div className="project-header" onClick={() => toggleProject(project.id)}>
             <h3 className="project-title">{project.title}</h3>
-            {activeId === project.id ? <FaMinus className="icon" /> : <FaPlus className="icon" />}
+            {activeId === project.id ? <FaMinus className="icoon" /> : <FaPlus className="icoon" />}
           </div>
           {activeId === project.id && (
             <div className="project-details">
