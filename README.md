@@ -19,7 +19,7 @@ Welcome to my **personal portfolio website**, built using **React (Vite) for the
 ## 🚀 Getting Started  
 1️⃣ **Clone the repository**  
 ```sh
-git clone[ https://github.com/your-username/your-portfolio.git ](https://github.com/Priyankanegi28/portfolio.git) 
+git clone  https://github.com/Priyankanegi28/portfolio.git
 cd portfolio  
 ```  
 2️⃣ **Install dependencies**  
