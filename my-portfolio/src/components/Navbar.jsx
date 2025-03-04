@@ -34,7 +34,7 @@ const Navbar = ({ scrollToHero, scrollToAbout, scrollToWork, scrollToContact, sc
         <ul ref={menuRef} className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToHero(); closeMenu(); }}>HOME</a></li>
           <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToAbout(); closeMenu(); }}>ABOUT</a></li>
-          <li><a href="#education" onClick={(e) => { e.preventDefault(); scrollToEducation(); closeMenu(); }}>EDU</a></li>
+          <li><a href="#education" onClick={(e) => { e.preventDefault(); scrollToEducation(); closeMenu(); }}>EDUCATION</a></li>
           <li><a href="#work" onClick={(e) => { e.preventDefault(); scrollToWork(); closeMenu(); }}>WORK</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToContact(); closeMenu(); }}>CONTACT</a></li>
         </ul>
