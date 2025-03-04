@@ -4,6 +4,22 @@ import backgroundImage from "../assets/image.png";
 import "./Hero.css";
 
 const Hero = ({ scrollToContact }) => {
+  const handleViewAndDownload = () => {
+    const viewUrl = "https://drive.google.com/file/d/1KgeUDCQwCNQIehzw_7l2J2YpWM1_y_8q/view?usp=sharing";
+    const downloadUrl = "https://drive.google.com/uc?export=download&id=1KgeUDCQwCNQIehzw_7l2J2YpWM1_y_8q";
+
+    // Open the CV in a new tab for viewing
+    window.open(viewUrl, "_blank");
+
+    // Create a hidden link to trigger automatic download
+    const link = document.createElement("a");
+    link.href = downloadUrl;
+    link.setAttribute("download", "Priyanka_Negi_CV.pdf"); // Set filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className="hero" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="overlay">
@@ -12,12 +28,9 @@ const Hero = ({ scrollToContact }) => {
         <p>"Driven to apply technical expertise and project experience to develop cutting-edge solutions and support organizational success"</p>
 
         <div className="button-container">
-          <a 
-            href="https://drive.google.com/file/d/1Rvi6NK7NIHuytgIHzd0YzTUgfbHIHquZ/view?usp=sharing"
-            className="btn" target="_blank" rel="noopener noreferrer"
-          >
+          <button className="btn" onClick={handleViewAndDownload}>
             Download CV
-          </a>
+          </button>
           <button className="btn" onClick={scrollToContact}>
             Let's talk <FaPaperPlane className="iconn" />
           </button>
