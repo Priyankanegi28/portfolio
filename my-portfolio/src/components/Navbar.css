@@ -1,100 +1,187 @@
+:root {
+  --primary-color: #0A1A41;
+  --accent-color: #FF6B6B;
+  --text-color: #F8F9FA;
+  --text-secondary: #ADB5BD;
+  --transition: all 0.3s ease;
+}
+
 .navbar {
-  background: #0A1A41;
-  padding: 20px 0;
-  color: white;
+  background: rgba(10, 26, 65, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 25px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  padding: 15px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: 500;
-  margin-right: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  gap: 5px;
 }
 
-.logo span {
-  color: #3498db;
+.first-name {
+  color: var(--text-color);
+  position: relative;
+}
+
+.first-name::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .first-name::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.last-name {
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  margin-left: -50px;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-  margin-left: 20px;
   position: relative;
 }
 
 .nav-links a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
+  font-size: 16px;
   font-weight: 500;
-  transition: 0.3s;
-  padding: 5px 0;
-  display: inline-block;
+  transition: var(--transition);
+  padding: 8px 0;
+  position: relative;
 }
 
-.nav-links a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: white;
-  transition: width 0.3s ease-in-out;
+.nav-links a::before {
+  content: '';
   position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
-.nav-links a:hover::after {
-  width: 100%;
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.nav-links a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .menu-icon {
-  font-size: 24px;
   display: none;
+  background: transparent;
+  border: none;
   cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  outline: none;
+}
+
+.menu-line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: var(--accent-color);
+  margin: 5px 0;
+  transition: var(--transition);
+  transform-origin: center;
+}
+
+.menu-icon.open .menu-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-icon.open .menu-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .menu-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
+
   .menu-icon {
-      display: block;
+    display: block;
   }
 
   .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 80px;
-      right: 10px;
-      background: #0A1A41;
-      border-radius: 5px;
-      width: 200px;
-      text-align: center;
-      padding: 10px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background: rgba(10, 26, 65, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: var(--transition);
+    padding: 0;
+    margin: 0;
   }
 
   .nav-links.open {
-      display: flex;
+    transform: translateX(0);
   }
 
-  .nav-links li {
-      margin: 10px 0;
+  .nav-links a {
+    font-size: 18px;
+    padding: 10px 20px;
   }
 
-  .nav-links a::after {
-      bottom: 0;
+  .nav-links a::before {
+    width: calc(100% - 40px);
+    left: 20px;
   }
 }

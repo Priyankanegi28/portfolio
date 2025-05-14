@@ -3,12 +3,19 @@ import "./Navbar.css";
 
 const Navbar = ({ scrollToHero, scrollToAbout, scrollToWork, scrollToContact, scrollToEducation }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Reference for detecting outside clicks
+  const [scrolled, setScrolled] = useState(false);
+  const menuRef = useRef(null);
 
-  // Function to close the menu
   const closeMenu = () => setMenuOpen(false);
 
-  // Click outside menu to close it
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -21,22 +28,49 @@ const Navbar = ({ scrollToHero, scrollToAbout, scrollToWork, scrollToContact, sc
   }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <div className="logo">PRIYANKA NEGI</div>
-
-        {/* Hamburger Menu Button */}
-        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
+        <div className="logo" onClick={scrollToHero}>
+          <span className="first-name">PRIYANKA</span>
+          <span className="last-name">NEGI</span>
         </div>
 
-        {/* Navbar Links */}
+        <button 
+          className={`menu-icon ${menuOpen ? 'open' : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className="menu-line"></span>
+          <span className="menu-line"></span>
+          <span className="menu-line"></span>
+        </button>
+
         <ul ref={menuRef} className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToHero(); closeMenu(); }}>HOME</a></li>
-          <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToAbout(); closeMenu(); }}>ABOUT</a></li>
-          <li><a href="#education" onClick={(e) => { e.preventDefault(); scrollToEducation(); closeMenu(); }}>EDUCATION</a></li>
-          <li><a href="#work" onClick={(e) => { e.preventDefault(); scrollToWork(); closeMenu(); }}>WORK</a></li>
-          <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToContact(); closeMenu(); }}>CONTACT</a></li>
+          <li>
+            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToHero(); closeMenu(); }}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToAbout(); closeMenu(); }}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#education" onClick={(e) => { e.preventDefault(); scrollToEducation(); closeMenu(); }}>
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="#work" onClick={(e) => { e.preventDefault(); scrollToWork(); closeMenu(); }}>
+              Work
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToContact(); closeMenu(); }}>
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

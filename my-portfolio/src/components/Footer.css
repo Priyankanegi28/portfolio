@@ -1,7 +1,22 @@
 .footer {
-  background-color: #0a192f;
+  background: linear-gradient(135deg, #0a192f 0%, #0f3057 100%);
   color: white;
-  padding: 40px 10%;
+  padding: 60px 10% 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.02)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
 }
 
 .footer-container {
@@ -9,77 +24,190 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 120px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
-.footer-logo .logo-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-weight: 300;
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
 }
-.footer-logo .logo-subtitle {
+
+.logo-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ffffff, #FF6B6B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-title span {
+  color: #f89b29;
+}
+
+.logo-subtitle {
   font-size: 1rem;
-  font-weight: 300;
-}
-
-.footer-logo .logo-title span {
-  color: #39c0ed;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
 }
 
 .footer-section {
-  text-align: left;
   flex: 1;
   min-width: 200px;
-  margin: 10px 0;
+  margin-bottom: 30px;
 }
 
-.footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.footer-section a {
-  font-size: 1rem;
+.section-titlee {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
   color: #39c0ed;
-  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #39c0ed, transparent);
 }
 
-.social-icons {
+.section-content {
   display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 
-.social-icons a {
-  background-color: white;
-  color: #0a192f;
-  width: 35px;
-  height: 35px;
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.info-icon {
+  font-size: 1.1rem;
+  color: #39c0ed;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.info-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.info-link:hover {
+  color: #39c0ed;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  color: white;
   font-size: 1.2rem;
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.social-icons a:hover {
+.social-link:hover {
+  color: #FF6B6B;
   transform: scale(1.1);
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    gap: 30px;
+  }
+  
+  .footer-section {
+    min-width: 160px;
+  }
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 50px 5% 30px;
+  }
+  
   .footer-container {
     flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-logo {
     text-align: center;
   }
+  
   .footer-section {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
-  .social-icons {
+  
+  .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .info-item {
     justify-content: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 5% 20px;
+  }
+  
+  .logo-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .info-link {
+    font-size: 0.9rem;
+  }
+  
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
 }
