@@ -33,4 +33,4 @@ npm run dev
 
 ## 📬 Contact  
 📧 Email: negipriyanka949@gmail.com  
-🌍 Live Portfolio: [[Your Website URL](https://priyankanegi28.github.io/portfolio/)]  
+🌍 Live Portfolio: [[Portfolio](https://priyankanegi28.github.io/portfolio/)]  
