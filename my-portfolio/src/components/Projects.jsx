@@ -14,7 +14,7 @@ const projects = [
   {
     id: 5,
     title: "TodoPro",
-    details: "TodoPro is a feature-rich task management application that helps users organize daily activities efficiently. It supports creating, editing, deleting, and completing todos with priority levels, due dates, and categories. Users can search, filter, and sort tasks, with support for both light and dark themes. The app ensures data persistence through LocalStorage and features a responsive UI for seamless usability across devices.",
+    details: "TodoPro is a feature-rich task management application that helps users organize daily activities efficiently. It supports creating, editing, deleting, and completing todos with priority levels, due dates, and categories. Users can search, filter, and sort tasks. The app ensures data persistence through LocalStorage and features a responsive UI for seamless usability across devices.",
     skills: ["HTML", "CSS", "JavaScript", "LocalStorage", "Responsive Design", "Task Management", "Glitch"],
     githubLink: "https://github.com/Priyankanegi28/Mini-Todo-App", 
     liveLink: "https://priyankanegi28.github.io/Mini-Todo-App/",
