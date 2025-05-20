@@ -28,6 +28,14 @@ const projects = [
     liveLink: "https://priyankanegi28.github.io/DomBookApp/",
   },
   {
+    id: 6,
+    title: "Music Player",
+    details: "Melo is a modern, responsive web-based music player with a sleek UI inspired by popular streaming services. Enjoy your favorite tracks with a beautiful interface that works across all devices.",
+    skills: ["HTML", "CSS", "JavaScript", "JSON Server", "DOM Manipulation","Glitch"],
+    githubLink: "https://github.com/Priyankanegi28/Music-Player",
+    liveLink: "https://priyankanegi28.github.io/Music-Player/",
+  },
+  {
     id: 3,
     title: "Image Gallery",
     details: "This project is a responsive image gallery built with HTML, CSS, and JavaScript. It features a grid layout, modal image preview, and sorting/filtering options. Users can browse images with hover effects and smooth transitions. The gallery is lightweight, fast, and mobile-friendly.",
