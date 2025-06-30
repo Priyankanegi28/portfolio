@@ -4,6 +4,22 @@ import "./Projects.css";
 
 const projects = [
   {
+    id: 8,
+    title: "Mentora",
+    details: "A student mental health support chatbot offering emotional support, mood tracking, and self-care resources. Built with React and Firebase, Mentora provides a confidential, stigma-free space for students to manage stress, anxiety, and emotional well-being through interactive tools and guided resources.",
+    skills: ["React", "Firebase", "Figma (UI/UX)", "Web Audio API", "Responsive Design", "Mental Health Tech"],
+    githubLink: "https://github.com/Priyankanegi28/Mentora",
+    liveLink: "https://mentora-chatbot.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "Serene Haven",
+    details: "A luxury hotel and resort booking web application offering world-class accommodations, dining, experiences, and events. Built with React and Vite, Serene Haven provides a seamless, elegant, and modern user experience with features like room booking, experience reservations, event RSVPs, and Firebase authentication.",
+    skills: ["React", "Vite", "Firebase Auth", "Framer Motion", "Responsive Design", "React Router"],
+    githubLink: "https://github.com/Priyankanegi28/Veldora",
+    liveLink: "https://priyankanegi28.github.io/Veldora/",
+  },
+  {
     id: 1,
     title: "GrabMart",
     details: "This is an online shopping platform where users can browse and purchase products like clothes, electronics, books, and home appliances. Features include account creation, login, wishlist, shopping cart, and category-based navigation. Users can add items to their cart or wishlist for easy checkout. Built with HTML, CSS, and JavaScript, the website offers a seamless and responsive shopping experience.",
