@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="info-item">
               <FaMapMarkerAlt className="info-icon" />
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=Raja+Garden,+Ganpati+Dham,+Phase+2,+Laksar+Rd,+Haridwar,+Uttarakhand+249408,+India" 
+                href="https://maps.app.goo.gl/UESvAdUQp3GfHxyh9" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="info-link"
