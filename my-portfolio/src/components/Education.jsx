@@ -21,7 +21,7 @@ const Education = () => {
           <div className="education-info">
             <p><strong>INSTITUTION:</strong> <a href="https://huroorkee.ac.in/" target="_blank" rel="noopener noreferrer">Roorkee College Of Engineering, Roorkee</a></p>
             <p><strong>UNIVERSITY:</strong> <a href="https://uktech.ac.in/en" target="_blank" rel="noopener noreferrer">Uttarakhand Technical University, Dehradun</a></p>
-            <p><strong>CGPA:</strong> <span className="grade-highlight">7.9</span></p>
+            <p><strong>CGPA:</strong> <span className="grade-highlight">8.04</span></p>
           </div>
         </div>
         <div className="education-logo">

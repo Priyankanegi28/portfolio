@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { forwardRef, useEffect, useState } from "react";
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import "./Contact.css";
 
 const Contact = forwardRef((props, ref) => {
@@ -137,7 +137,7 @@ const Contact = forwardRef((props, ref) => {
                     <div className="map-container">
                         <iframe
                             title="Google Map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27666.65643241393!2d78.06164425098655!3d29.912341300000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39094611d2484d2f%3A0xea492db17341191f!2sGanpati%20Dham%2C%20C-82%2C%20Kankhal%20Phase%202%2C%20near%20Matranchal%20Children%20Academy%2C%20Phase%202%2C%20Raja%20Garden%2C%20Jagjeetpur%2C%20Haridwar%2C%20Jamalpur%20Kalan%2C%20Uttarakhand%20249408%2C%20India!5e0!3m2!1sen!2sus!4v1739945179356!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110621.80693388333!2d78.11592575!3d29.95264985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909470eb8ee57c9%3A0x4e449176a640f5f3!2sHaridwar%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1762520127611!5m2!1sen!2sin"
                             allowFullScreen
                             loading="lazy"
                             className="google-map"
@@ -174,24 +174,17 @@ const Contact = forwardRef((props, ref) => {
                             >
                                 <FaLinkedinIn className="social-icon" />
                             </a>
-                            <a 
-                                href="https://www.instagram.com/_priyanka_negi01/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                aria-label="Instagram"
-                            >
-                                <FaInstagram className="social-icon" />
-                            </a>
+                            
                         </div>
 
                         <div className="info-item">
                             <FaMapMarkerAlt className="info-icon" />
                             <a 
-                                href="https://maps.app.goo.gl/U4LubnGWBm2BLHkVA" 
+                                href="https://maps.app.goo.gl/UESvAdUQp3GfHxyh9" 
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Raja Garden, Ganpati Dham, Phase 2, Laksar Rd, Haridwar, Uttarakhand 249408, India
+                                Haridwar, Uttarakhand , India
                             </a>
                         </div>
                     </div>

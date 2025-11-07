@@ -15,8 +15,8 @@ const Hero = ({ scrollToContact }) => {
   }, []);
 
   const handleViewAndDownload = () => {
-    const viewUrl = "https://drive.google.com/file/d/1HaVB395R4sFVP-imeZAoeKJinRwYEwG_/view?usp=sharing";
-    const downloadUrl = "https://drive.google.com/uc?export=download&id=1HaVB395R4sFVP-imeZAoeKJinRwYEwG_";
+    const viewUrl = "https://drive.google.com/file/d/1yDrDUtoE2DPxDXgD8udbSiFqyWLxdiPy/view?usp=sharing";
+    const downloadUrl = "https://drive.google.com/uc?export=download&id=1yDrDUtoE2DPxDXgD8udbSiFqyWLxdiPy";
 
     window.open(viewUrl, "_blank");
     
@@ -41,7 +41,7 @@ const Hero = ({ scrollToContact }) => {
             </h1>
             <h2>
               <span className="title-icon"><FaLaptopCode /></span>
-              <span className="title">Frontend Developer</span>
+              <span className="title">Full Stack Developer</span>
             </h2>
             <p className="hero-quote">
               "Driven to apply technical expertise and project experience to develop cutting-edge solutions and support organizational success"
@@ -75,8 +75,8 @@ const Hero = ({ scrollToContact }) => {
                   <pre>{`
   const developer = {
     name: "Priyanka Negi",
-    role: "Frontend Developer",
-    skills: [ "React","JavaScript", "HTML/CSS"],
+    role: "Full Stack Developer",
+    skills: [ "React", "JavaScript", "HTML/CSS" ],
     passion: "Creating beautiful,
               user-friendly interfaces"
   };`}</pre>
@@ -88,8 +88,8 @@ const Hero = ({ scrollToContact }) => {
                   <pre>{`
   const developer = {
     name: "Priyanka Negi",
-    role: "Frontend Developer",
-    skills: [ "React","JavaScript", "HTML/CSS"],
+    role: "Full Stack Developer",
+    skills: [ "React", "JavaScript", "HTML/CSS" ],
     passion: "Creating beautiful,
               user-friendly interfaces"
   };`}</pre>

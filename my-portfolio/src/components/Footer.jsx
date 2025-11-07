@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Logo Section */}
         <div className="footer-logo">
           <h2 className="logo-title">PRIYANKA <span>NEGI</span></h2>
-          <p className="logo-subtitle">Frontend Developer</p>
+          <p className="logo-subtitle">Full Stack Developer</p>
         </div>
 
         {/* Location Section */}
@@ -24,9 +24,9 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="info-link"
               >
-                <p>Raja Garden, Ganpati Dham,</p>
-                <p>Phase 2, Laksar Rd, Haridwar,</p>
-                <p>Uttarakhand 249408, India</p>
+              
+                <p>Haridwar,</p>
+                <p>Uttarakhand , India</p>
               </a>
             </div>
           </div>
@@ -73,15 +73,7 @@ const Footer = () => {
             >
               <FaLinkedinIn className="social-icon" />
             </a>
-            <a 
-              href="https://www.instagram.com/_priyanka_negi01/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="social-link"
-            >
-              <FaInstagram className="social-icon" />
-            </a>
+            
           </div>
         </div>
       </div>

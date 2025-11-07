@@ -7,12 +7,13 @@ const experiences = [
   {
     id: 4,
     title: "Masai School",
-    duration: "October, 2024 - Completed",
-    description: "6-month full-stack web development internship at Masai School. Building real-world projects using React, Firebase, and modern web technologies while honing problem-solving and collaboration skills.",
-    details: "This Masai School internship is a hands-on learning experience where I am working on building real-world projects using HTML, CSS, JavaScript, React, Glitch, and Firebase. The program emphasizes problem-solving, collaboration, and industry-relevant skills. I am gaining expertise in front-end development, responsive design, state management in React, and backend integration with Firebase.",
-    skills: "HTML, CSS, JavaScript, React, Glitch, Firebase, Responsive Design, Version Control (Git)",
-    grade: "Performance evaluation is ongoing, with consistent progress and positive feedback on project submissions.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNckH5q7N4sJXIllDAKUsBdO8jwmxaNMVrrw&s",
+    duration: "October 2024 - June 2025",
+    description: "Successfully completed the Women's Digital Empowerment Program by KSIF and Masai School, focused on developing core technical and professional skills required to excel as a Web Engineer.",
+    details: "This program provided in-depth training in full-stack web development, emphasizing practical learning through real-world projects. The curriculum included HTML, CSS, JavaScript, React, Node.js, and MongoDB, alongside modules on collaboration, problem-solving, and industry readiness. It helped strengthen both front-end and back-end development skills essential for full-stack engineering.",
+    skills: "HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Problem Solving, Git, Collaboration",
+    grade: "Successfully completed with demonstrated proficiency in full-stack web development and teamwork.",
+    image: "https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp",
+    certificate: "https://drive.google.com/file/d/1BK995IVGXe-8sDMCnSM3yJHVPdBS2qD5/view?usp=sharing"
   },
   {
     id: 1,
